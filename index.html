@@ -1,101 +1,239 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Laptops for Kids - Recommendation</title>
-    <style>
-        body {
-            font-family: 'Sarabun', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f4f7f9;
-        }
-        .container {
-            background: #fff;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        h1 { color: #1a3a5f; border-bottom: 4px solid #3498db; padding-bottom: 10px; text-align: center; }
-        h2 { color: #2980b9; margin-top: 30px; border-left: 6px solid #3498db; padding-left: 15px; }
-        h3 { color: #2c3e50; margin-top: 20px; }
-        .highlight { color: #e67e22; font-weight: bold; }
-        .recommendation-card {
-            background: #eef7ff;
-            border: 2px solid #3498db;
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .price-tag {
-            font-size: 1.4em;
-            color: #e67e22;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.2s, background-color 0.2s;
-        }
-        .btn:hover {
-            background-color: #2980b9;
-            transform: scale(1.05);
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
-            text-align: center;
-        }
-        .badge {
-            background: #3498db;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
-            vertical-align: middle;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Laptops for Kids - Recommendation</title>
+  <style>/* design-systems/cafe/tokens.css
+ * Structured token bindings for Cafe.
+ * cafe hospitality system with warm cream, espresso text, and inviting menu surfaces.
+ */
+
+:root {
+  --bg: #fbf6ee;
+  --surface: #fffdf8;
+  --surface-warm: #f1e3cf;
+  --fg: #201914;
+  --fg-2: #4c4037;
+  --muted: #7a6d63;
+  --meta: #9b5b32;
+  --border: #ded2c3;
+  --border-soft: #eee4d7;
+  --accent: #9b5b32;
+  --accent-on: #ffffff;
+  --accent-hover: color-mix(in oklab, var(--accent), black 8%);
+  --accent-active: color-mix(in oklab, var(--accent), black 14%);
+  --success: #4f8a4f;
+  --warn: #c9822f;
+  --danger: #b33a3a;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, monospace;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 17px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 42px;
+  --text-3xl: 64px;
+  --text-4xl: 88px;
+  --leading-body: 1.62;
+  --leading-tight: 1;
+  --tracking-display: -0.025em;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --section-y-desktop: 112px;
+  --section-y-tablet: 80px;
+  --section-y-phone: 56px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+  --elev-flat: none;
+  --elev-ring: 0 0 0 1px var(--border);
+  --elev-raised: 0 20px 52px rgba(32, 25, 20, 0.12);
+  --focus-ring: 0 0 0 4px rgba(155, 91, 50, 0.24);
+  --motion-fast: 150ms;
+  --motion-base: 240ms;
+  --ease-standard: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --container-max: 1180px;
+  --container-gutter-desktop: 36px;
+  --container-gutter-tablet: 24px;
+  --container-gutter-phone: 16px;
+}
+
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 14% 8%, rgba(241, 227, 207, .78), transparent 34%),
+    linear-gradient(135deg, var(--bg) 0%, var(--surface) 58%, var(--surface-warm) 100%);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.page { min-height: 100vh; }
+.container {
+  width: min(var(--container-max), calc(100% - (var(--container-gutter-desktop) * 2)));
+  margin: 0 auto;
+}
+.hero {
+  padding: 72px 0 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+.stack > * + * { margin-top: var(--space-4); }
+.eyebrow {
+  margin: 0;
+  color: var(--meta);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+}
+h1 { max-width: 860px; font-size: clamp(40px, 6.4vw, 72px); font-weight: 720; }
+h2 { font-size: clamp(32px, 4.2vw, 56px); font-weight: 700; }
+h3 { font-size: clamp(24px, 2.6vw, var(--text-xl)); font-weight: 720; }
+.lead { max-width: 680px; color: var(--fg-2); font-size: var(--text-lg); }
+.actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 var(--space-5);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  color: inherit;
+  font: 700 var(--text-sm)/1 var(--font-body);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--motion-fast) var(--ease-standard), border-color var(--motion-fast) var(--ease-standard), color var(--motion-fast) var(--ease-standard), transform 140ms var(--ease-standard), box-shadow var(--motion-fast) var(--ease-standard);
+}
+.btn:focus-visible { outline: 0; box-shadow: var(--focus-ring); }
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--accent); color: var(--accent-on); }
+.btn-secondary { background: color-mix(in oklab, var(--surface), transparent 3%); border-color: var(--border); box-shadow: var(--elev-ring); }
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+}
+.panel, .card, .model-card, .table-panel {
+  background: color-mix(in oklab, var(--surface), transparent 3%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--elev-raised);
+  overflow: hidden;
+}
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border-bottom: 1px solid var(--border-soft);
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--meta);
+  font: 700 var(--text-xs)/1 var(--font-mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.status::before { content: ''; width: 8px; height: 8px; border-radius: var(--radius-pill); background: var(--success); }
+.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--border-soft); }
+.metric { padding: var(--space-5); border-right: 1px solid var(--border-soft); }
+.metric:last-child { border-right: 0; }
+.metric strong { display: block; font-family: var(--font-display); font-size: var(--text-2xl); line-height: var(--leading-tight); }
+.metric span { color: var(--muted); font-size: var(--text-sm); }
+.section { padding: 44px 0; }
+.section-head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-6); margin-bottom: var(--space-6); }
+.section-head p { color: var(--muted); max-width: 560px; }
+.footer { padding: var(--space-8) 0 48px; color: var(--muted); font-size: var(--text-sm); text-align: center; }
+@media (max-width: 860px) {
+  .container { width: min(100% - (var(--container-gutter-tablet) * 2), var(--container-max)); }
+  .hero { grid-template-columns: 1fr; padding-top: 48px; }
+  .metrics { grid-template-columns: 1fr; }
+  .metric { border-right: 0; border-bottom: 1px solid var(--border-soft); }
+  .metric:last-child { border-bottom: 0; }
+  .section-head { display: grid; }
+}
+@media (max-width: 520px) {
+  .container { width: min(100% - (var(--container-gutter-phone) * 2), var(--container-max)); }
+  h1 { font-size: clamp(38px, 13vw, 54px); }
+  h2 { font-size: clamp(30px, 10vw, 42px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 1ms !important; animation-duration: 1ms !important; animation-iteration-count: 1 !important; }
+}
+
+    .hero-card { padding: var(--space-6); }
+    .pick-image { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; padding: var(--space-5); background: var(--surface-warm); border-bottom: 1px solid var(--border-soft); }
+    .pick-body { padding: var(--space-6); }
+    .price-tag { display: inline-flex; margin-top: var(--space-4); padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill); background: var(--surface-warm); color: var(--meta); font-weight: 800; }
+    .reason-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); }
+    .reason-card { padding: var(--space-5); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); }
+    .reason-card p { color: var(--muted); font-size: var(--text-sm); margin-top: var(--space-3); }
+    @media (max-width: 860px) { .reason-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎯 สรุปคำแนะนำ: ควรซื้อเครื่องไหนดี?</h1>
-        
-        <p>จากผลการวิจัยโน้ตบุ๊กในงบประมาณไม่เกิน 20,000 บาท สำหรับการใช้งานของเด็ก (เน้นการเรียนและการใช้งานทั่วไปยาวนาน 3 ปี) โคลเวอร์ขอสรุปคำแนะนำที่ดีที่สุดดังนี้ค่ะ:</p>
-        
-        <div class="recommendation-card">
-            <h3 style="margin:0;">🌟 รุ่นที่แนะนำที่สุด (Best Choice)</h3>
-            <p style="font-size: 1.2em; margin: 10px 0;"><strong>ASUS Vivobook Go 15 (M1504FA)</strong></p>
-            <p>ด้วยสเปก CPU Ryzen 5 ที่แรงกว่าคู่แข่งในระดับราคาเดียวกัน และหน้าจอขนาดใหญ่ที่เหมาะกับเด็ก โคลเวอร์มองว่าเป็นเครื่องที่คุ้มค่าที่สุดสำหรับการใช้งานยาวๆ 3 ปี</p>
-            <span class="price-tag">ราคาประมาณ: 15,990 - 17,990 บาท</span>
-            <a href="research_notebook.html" class="btn">ดูข้อมูลการวิจัยและตารางเปรียบเทียบ</a>
+  <main class="page">
+    <section class="container hero">
+      <div class="stack">
+        <p class="eyebrow">Laptop buying guide · July 2026</p>
+        <h1>เครื่องที่คุ้มสุดสำหรับเด็ก ใช้เรียนยาว ๆ 3 ปี</h1>
+        <p class="lead">สรุปจากรุ่นในงบไม่เกิน 20,000 บาท โดยเน้นความลื่นไหลในการเรียนออนไลน์ งานเอกสาร เปิดหลายหน้าต่าง และความคุ้มค่าระยะยาว</p>
+        <div class="actions">
+          <a href="research_notebook.html" class="btn btn-primary">ดูตารางเปรียบเทียบ</a>
+          <a href="#why" class="btn btn-secondary">อ่านเหตุผล</a>
         </div>
-        
-        <hr>
-        
-        <h2>💡 ทำไมถึงแนะนำรุ่นนี้?</h2>
-        <ul style="text-align: left; display: inline-block;">
-            <li><strong>ความคุ้มค่า:</strong> ให้ประสิทธิภาพต่อราคาสูงที่สุดในตลาดขณะนี้</li>
-            <li><strong>สเปกสำหรับอนาคต:</strong> รองรับการเปิดโปรแกรมเรียนพร้อมกันหลายหน้าต่างได้ลื่นไหล</li>
-            <li><strong>ความพึงพอใจ:</strong> หน้าจอใหญ่และดีไซน์ทันสมัย ตอบโจทย์การใช้งานของเด็ก</li>
-        </ul>
-        
-        <p style="margin-top: 30px;">หากต้องการดูเปรียบเทียบสเปกเชิงลึก ข้อดี-ข้อเสีย หรือดูลิงก์ร้านค้าแต่ละรุ่นเพิ่มเติม สามารถกดปุ่มด้านบนเพื่อดูรายละเอียดทั้งหมดได้ทันทีค่ะ</p>
-        
-        <div class="footer">
-            *ข้อมูลอัปเดตล่าสุด: กรกฎาคม 2026 | ข้อมูลโปรโมชั่นอาจเปลี่ยนแปลงตามเงื่อนไขของร้านค้าแต่ละแห่ง
+      </div>
+      <article class="panel hero-card" aria-label="Recommended laptop">
+        <img class="pick-image" src="assets/images/asus_vivobook.png" alt="ASUS Vivobook Go 15">
+        <div class="pick-body stack">
+          <p class="eyebrow">Best choice</p>
+          <h3>ASUS Vivobook Go 15 (M1504FA)</h3>
+          <p>CPU Ryzen 5 แรงกว่าคู่แข่งในระดับราคาเดียวกัน หน้าจอใหญ่ เหมาะกับเด็ก และคุ้มสำหรับใช้งานยาว</p>
+          <span class="price-tag">15,990 - 17,990 บาท</span>
         </div>
-    </div>
+      </article>
+    </section>
+    <section id="why" class="container section">
+      <div class="section-head">
+        <div><p class="eyebrow">Why this pick</p><h2>เหตุผลที่เลือกรุ่นนี้</h2></div>
+        <p>จัดลำดับจาก performance ต่อราคา ความพร้อมสำหรับการใช้งานหลายปี และประสบการณ์ใช้งานจริงของเด็ก</p>
+      </div>
+      <div class="reason-grid">
+        <article class="reason-card"><p class="eyebrow">Value</p><h3>คุ้มค่าที่สุด</h3><p>ให้ประสิทธิภาพต่อราคาสูงที่สุดในกลุ่มที่เทียบกัน</p></article>
+        <article class="reason-card"><p class="eyebrow">Longevity</p><h3>สเปกเผื่ออนาคต</h3><p>รองรับการเปิดโปรแกรมเรียนและ browser หลายหน้าต่างได้ดี</p></article>
+        <article class="reason-card"><p class="eyebrow">Comfort</p><h3>เหมาะกับเด็ก</h3><p>หน้าจอใหญ่ ดีไซน์ใช้ง่าย และพกพาได้ในระดับเหมาะสม</p></article>
+      </div>
+    </section>
+    <footer class="container footer">*ข้อมูลอัปเดตล่าสุด: กรกฎาคม 2026 | โปรโมชั่นอาจเปลี่ยนแปลงตามเงื่อนไขร้านค้า</footer>
+  </main>
 </body>
 </html>
