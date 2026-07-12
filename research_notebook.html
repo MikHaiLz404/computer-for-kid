@@ -73,6 +73,24 @@
             transform: scale(1.05);
         }
 
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.82);
+        }
+        #lightbox img {
+            max-width: min(100%, 1000px);
+            max-height: 90vh;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 20px 60px rgba(0,0,0,.45);
+        }
+
         .pros { color: #27ae60; font-weight: bold; }
         .cons { color: #c0392c; font-weight: bold; }
         .price-tag {
@@ -175,8 +193,8 @@
         <!-- Model 1 -->
         <div class="model-card">
             <h3 style="margin:0;">1. ASUS Vivobook Go 15 (M1504FA)</h3>
-            <div class="image-container" onclick="showLightbox('https://m.media-amazon.com/images/I/61fLdF7+mNL._AC_SL1500_.jpg')">
-                <img src="https://m.media-amazon.com/images/I/61fLdF7+mNL._AC_SL1500_.jpg" alt="ASUS Vivobook Go 15">
+            <div class="image-container" onclick="showLightbox('assets/images/asus_vivobook.png')">
+                <img src="assets/images/asus_vivobook.png" alt="ASUS Vivobook Go 15">
             </div>
             <p><strong style="color:#1a3a5f;">จุดเด่นสำคัญ:</strong> สเปก CPU แรงที่สุดในกลุ่ม เหมาะสำหรับการใช้งานหลายอย่างพร้อมกันและทำงานกราฟิกเบื้องต้น</p>
             <p class="pros">✅ ข้อดี:</p>
@@ -185,12 +203,12 @@
                 <li style="color:#27ae60;">หน้าจอ IPS สีสวยสบายตา</li>
                 <li style="color:#27ae60;">ดีไซน์ทันสมัย บางเบา พกพาสะดวก</li>
             </ul>
-            <p class.cons">❌ ข้อเสีย:</p>
+            <p class="cons">❌ ข้อเสีย:</p>
             <ul style="color:#c0392c;">
                 <li style="color:#c0392c;">วัสดุบอดี้ส่วนใหญ่เป็นพลาสติก</li>
                 <li style="color:#c0392c;">การอัปเกรด RAM ภายหลังทำได้จำกัดในบางรุ่น</li>
             </ul>
-            <p class.price-tag">ราคาประมาณ: 15,990 - 17,990 บาท</p>
+            <p class="price-tag">ราคาประมาณ: 15,990 - 17,990 บาท</p>
             <div style="margin-top:15px;">
                 <a href="https://www.advice.co.th/product/A0151735" class="btn" target="_blank">ซื้อที่ Advice</a>
                 <a href="https://www.bnn.in.th/th/p/asus-notebook-vivobook-go-15-m1504fa-nj516w-mixed-black-a-4711387533116_zjkn7w" class="btn" target="_blank">ซื้อที่ Banana</a>
@@ -201,8 +219,8 @@
         <!-- Model 2 -->
         <div class="model-card">
             <h3 style="margin:0;">2. Acer Aspire 3 (A315-24P)</h3>
-            <div class="image-container" onclick="showLightbox('https://m.media-amazon.com/images/I/616y7P-v6dL._AC_SL1000_.jpg')">
-                <img src="https://m.media-amazon.com/images/I/616y7P-v6dL._AC_SL1000_.jpg" alt="Acer Aspire 3">
+            <div class="image-container" onclick="showLightbox('assets/images/acer_aspire3.jpg')">
+                <img src="assets/images/acer_aspire3.jpg" alt="Acer Aspire 3">
             </div>
             <p><strong style="color:#1a3a5f;">จุดเด่นสำคัญ:</strong> ความคุ้มค่าสูงสุดสำหรับงบประหยัด เน้นงานเอกสารและการเรียนออนไลน์เป็นหลัก</p>
             <p class="pros">✅ ข้อดี:</p>
@@ -211,12 +229,12 @@
                 <li style="color:#27ae60;">พอร์ตเชื่อมต่อครบครันมาก</li>
                 <li style="color:#27ae60;">เหมาะสำหรับการใช้งานพื้นฐาน</li>
             </ul>
-            <p class.cons">❌ ข้อเสีย:</p>
+            <p class="cons">❌ ข้อเสีย:</p>
             <ul style="color:#c0392c;">
                 <li style="color:#c0392c;">CPU รุ่นเริ่มต้น อาจจะช้ากว่ารุ่นอื่นเล็กน้อย</li>
                 <li style="color:#c0392c;">น้ำหนักเครื่องค่อนข้างมากเมื่อเทียบกับคู่แข่ง</li>
             </ul>
-            <p class.price-tag">ราคาประมาณ: 13,990 - 15,990 บาท</p>
+            <p class="price-tag">ราคาประมาณ: 13,990 - 15,990 บาท</p>
             <div style="margin-top:15px;">
                 <a href="https://www.lazada.co.th/tag/acer-aspire-3-a315-24p" class="btn" target="_blank">ซื้อที่ Lazada</a>
                 <a href="https://www.jib.co.th/web/product/readProduct/61471/32/NOTEBOOK--%E0%B9%82%E0%B8%99%E0%B9%89%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%84--ACER-ASPIRE-3-A315-24P-R6SK--PURE-SILVER-" class="btn" target="_blank">ซื้อที่ JIB</a>
@@ -226,8 +244,8 @@
         <!-- Model 3 -->
         <div class="model-card">
             <h3 style="margin:0;">3. HP 15 (Essential Series)</h3>
-            <div class="image-container" onclick="showLightbox('https://m.media-amazon.com/images/I/61jVv+U85zL._AC_SL1000_.jpg')">
-                <img src="https://m.media-amazon.com/images/I/61jVv+U85zL._AC_SL1000_.jpg" alt="HP 15">
+            <div class="image-container" onclick="showLightbox('assets/images/hp_15_essential.png')">
+                <img src="assets/images/hp_15_essential.png" alt="HP 15">
             </div>
             <p><strong style="color:#1a3a5f;">จุดเด่นสำคัญ:</strong> งานประกอบประณีต ดีไซน์เรียบหรู และบริการหลังการขายที่เชื่อถือได้</p>
             <p class="pros">✅ ข้อดี:</p>
@@ -236,12 +254,12 @@
                 <li style="color:#27ae60;">คีย์บอร์ดและทัชแพดให้ประสบการณ์การพิมพ์ที่ดีมาก</li>
                 <li style="color:#27ae60;">ระบบระบายความร้อนทำงานได้ดีและเงียบ</li>
             </ul>
-            <p class.cons">❌ ข้อเสีย:</p>
+            <p class="cons">❌ ข้อเสีย:</p>
             <ul style="color:#c0392c;">
                 <li style="color:#c0392c;">ราคาสูงกว่ารุ่นอื่นเล็กน้อยในสเปกที่ใกล้เคียงกัน</li>
                 <li style="color:#c0392c;">การปรับแต่งสีหน้าจออาจไม่โดดเด่นเท่ารุ่นยอดนิยมบางรุ่น</li>
             </ul>
-            <p class.price-tag">ราคาประมาณ: 16,900 - 19,500 บาท</p>
+            <p class="price-tag">ราคาประมาณ: 16,900 - 19,500 บาท</p>
             <div style="margin-top:15px;">
                 <a href="https://www.bnn.in.th/th/p/asus-notebook-vivobook-go-15-m1504fa-nj516w-mixed-black-a-4711387533116_zjkn7w" class="btn" target="_blank">ซื้อที่ Banana</a>
                 <a href="https://shopee.co.th/%E0%B9%82%E0%B8%99%E0%B9%8A%E0%B8%95%E0%B8%9A%E0%B8%B8%E0%B9%8A%E0%B8%84-HP-15-fd0946TU-Silver-by-Banana-IT-i.22507473.47860563116" class="btn" target="_blank">ซื้อที่ Shopee</a>
