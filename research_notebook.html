@@ -3,290 +3,1005 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deep Research: Best Laptops for Kids</title>
-  <style>/* design-systems/cafe/tokens.css
- * Structured token bindings for Cafe.
- * cafe hospitality system with warm cream, espresso text, and inviting menu surfaces.
- */
+  <title>Deep Research: Best Laptops for Kids (Aug 2026)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    /* design-systems/cafe/tokens.css */
+    :root {
+      --bg: #fbf6ee;
+      --surface: #fffdf8;
+      --surface-warm: #f1e3cf;
+      --fg: #201914;
+      --fg-2: #4c4037;
+      --muted: #7a6d63;
+      --meta: #9b5b32;
+      --border: #ded2c3;
+      --border-soft: #eee4d7;
+      --accent: #9b5b32;
+      --accent-on: #ffffff;
+      --accent-hover: color-mix(in oklab, var(--accent), black 8%);
+      --accent-active: color-mix(in oklab, var(--accent), black 14%);
+      --success: #4f8a4f;
+      --warn: #c9822f;
+      --danger: #b33a3a;
+      --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+      --font-body: "Inter", system-ui, sans-serif;
+      --font-mono: "SF Mono", ui-monospace, Menlo, monospace;
+      --text-xs: 12px;
+      --text-sm: 14px;
+      --text-base: 16px;
+      --text-lg: 18px;
+      --text-xl: 24px;
+      --text-2xl: 36px;
+      --text-3xl: 48px;
+      --text-4xl: 64px;
+      --leading-body: 1.62;
+      --leading-tight: 1.1;
+      --tracking-display: -0.025em;
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-10: 40px;
+      --space-12: 48px;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-pill: 9999px;
+      --elev-ring: 0 0 0 1px var(--border);
+      --elev-raised: 0 4px 24px rgba(32, 25, 20, 0.08);
+      --focus-ring: 0 0 0 3px rgba(155, 91, 50, 0.25);
+      --motion-fast: 150ms;
+      --motion-base: 240ms;
+      --ease: cubic-bezier(0.23, 1, 0.32, 1);
+    }
 
-:root {
-  --bg: #fbf6ee;
-  --surface: #fffdf8;
-  --surface-warm: #f1e3cf;
-  --fg: #201914;
-  --fg-2: #4c4037;
-  --muted: #7a6d63;
-  --meta: #9b5b32;
-  --border: #ded2c3;
-  --border-soft: #eee4d7;
-  --accent: #9b5b32;
-  --accent-on: #ffffff;
-  --accent-hover: color-mix(in oklab, var(--accent), black 8%);
-  --accent-active: color-mix(in oklab, var(--accent), black 14%);
-  --success: #4f8a4f;
-  --warn: #c9822f;
-  --danger: #b33a3a;
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-body: Inter, system-ui, sans-serif;
-  --font-mono: "SF Mono", ui-monospace, Menlo, monospace;
-  --text-xs: 12px;
-  --text-sm: 14px;
-  --text-base: 17px;
-  --text-lg: 20px;
-  --text-xl: 28px;
-  --text-2xl: 42px;
-  --text-3xl: 64px;
-  --text-4xl: 88px;
-  --leading-body: 1.62;
-  --leading-tight: 1;
-  --tracking-display: -0.025em;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 20px;
-  --space-6: 24px;
-  --space-8: 32px;
-  --space-12: 48px;
-  --section-y-desktop: 112px;
-  --section-y-tablet: 80px;
-  --section-y-phone: 56px;
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-pill: 9999px;
-  --elev-flat: none;
-  --elev-ring: 0 0 0 1px var(--border);
-  --elev-raised: 0 20px 52px rgba(32, 25, 20, 0.12);
-  --focus-ring: 0 0 0 4px rgba(155, 91, 50, 0.24);
-  --motion-fast: 150ms;
-  --motion-base: 240ms;
-  --ease-standard: cubic-bezier(0.23, 1, 0.32, 1);
-  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
-  --container-max: 1180px;
-  --container-gutter-desktop: 36px;
-  --container-gutter-tablet: 24px;
-  --container-gutter-phone: 16px;
-}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: var(--leading-body);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background:
-    radial-gradient(circle at 14% 8%, rgba(241, 227, 207, .78), transparent 34%),
-    linear-gradient(135deg, var(--bg) 0%, var(--surface) 58%, var(--surface-warm) 100%);
-  color: var(--fg);
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  line-height: var(--leading-body);
-  -webkit-font-smoothing: antialiased;
-}
-a { color: inherit; }
-.page { min-height: 100vh; }
-.container {
-  width: min(var(--container-max), calc(100% - (var(--container-gutter-desktop) * 2)));
-  margin: 0 auto;
-}
-.hero {
-  padding: 72px 0 48px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr);
-  gap: var(--space-8);
-  align-items: center;
-}
-.stack > * + * { margin-top: var(--space-4); }
-.eyebrow {
-  margin: 0;
-  color: var(--meta);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-h1, h2, h3, p { margin: 0; }
-h1, h2, h3 {
-  font-family: var(--font-display);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-display);
-}
-h1 { max-width: 860px; font-size: clamp(40px, 6.4vw, 72px); font-weight: 720; }
-h2 { font-size: clamp(32px, 4.2vw, 56px); font-weight: 700; }
-h3 { font-size: clamp(24px, 2.6vw, var(--text-xl)); font-weight: 720; }
-.lead { max-width: 680px; color: var(--fg-2); font-size: var(--text-lg); }
-.actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  padding: 0 var(--space-5);
-  border: 1px solid transparent;
-  border-radius: var(--radius-md);
-  color: inherit;
-  font: 700 var(--text-sm)/1 var(--font-body);
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color var(--motion-fast) var(--ease-standard), border-color var(--motion-fast) var(--ease-standard), color var(--motion-fast) var(--ease-standard), transform 140ms var(--ease-standard), box-shadow var(--motion-fast) var(--ease-standard);
-}
-.btn:focus-visible { outline: 0; box-shadow: var(--focus-ring); }
-.btn:active { transform: scale(0.97); }
-.btn-primary { background: var(--accent); color: var(--accent-on); }
-.btn-secondary { background: color-mix(in oklab, var(--surface), transparent 3%); border-color: var(--border); box-shadow: var(--elev-ring); }
-@media (hover: hover) and (pointer: fine) {
-  .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
-  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
-}
-.panel, .card, .model-card, .table-panel {
-  background: color-mix(in oklab, var(--surface), transparent 3%);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--elev-raised);
-  overflow: hidden;
-}
-.panel-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  padding: var(--space-5);
-  border-bottom: 1px solid var(--border-soft);
-}
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  color: var(--meta);
-  font: 700 var(--text-xs)/1 var(--font-mono);
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-.status::before { content: ''; width: 8px; height: 8px; border-radius: var(--radius-pill); background: var(--success); }
-.metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--border-soft); }
-.metric { padding: var(--space-5); border-right: 1px solid var(--border-soft); }
-.metric:last-child { border-right: 0; }
-.metric strong { display: block; font-family: var(--font-display); font-size: var(--text-2xl); line-height: var(--leading-tight); }
-.metric span { color: var(--muted); font-size: var(--text-sm); }
-.section { padding: 44px 0; }
-.section-head { display: flex; align-items: end; justify-content: space-between; gap: var(--space-6); margin-bottom: var(--space-6); }
-.section-head p { color: var(--muted); max-width: 560px; }
-.footer { padding: var(--space-8) 0 48px; color: var(--muted); font-size: var(--text-sm); text-align: center; }
-@media (max-width: 860px) {
-  .container { width: min(100% - (var(--container-gutter-tablet) * 2), var(--container-max)); }
-  .hero { grid-template-columns: 1fr; padding-top: 48px; }
-  .metrics { grid-template-columns: 1fr; }
-  .metric { border-right: 0; border-bottom: 1px solid var(--border-soft); }
-  .metric:last-child { border-bottom: 0; }
-  .section-head { display: grid; }
-}
-@media (max-width: 520px) {
-  .container { width: min(100% - (var(--container-gutter-phone) * 2), var(--container-max)); }
-  h1 { font-size: clamp(38px, 13vw, 54px); }
-  h2 { font-size: clamp(30px, 10vw, 42px); }
-}
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 1ms !important; animation-duration: 1ms !important; animation-iteration-count: 1 !important; }
-}
+    a { color: inherit; }
 
-    .nav-home { display: inline-flex; margin-top: var(--space-6); color: var(--meta); font-weight: 800; text-decoration: none; }
-    .comparison-table-container { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--surface); box-shadow: var(--elev-ring); }
-    table { width: 100%; border-collapse: collapse; min-width: 760px; }
-    th, td { padding: var(--space-4) var(--space-5); text-align: left; border-bottom: 1px solid var(--border-soft); }
-    th { background: var(--surface-warm); color: var(--fg); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: .08em; text-transform: uppercase; }
-    td { color: var(--fg-2); }
-    tbody tr:last-child td { border-bottom: 0; }
-    tbody td:first-child { color: var(--fg); font-weight: 800; }
-    .model-grid { display: grid; gap: var(--space-6); }
-    .model-card { display: grid; grid-template-columns: minmax(260px, .86fr) minmax(0, 1.14fr); }
-    .image-container { min-height: 100%; background: var(--surface-warm); border-right: 1px solid var(--border-soft); cursor: pointer; display: grid; place-items: center; overflow: hidden; }
-    .image-container img { width: 100%; height: 100%; max-height: 440px; object-fit: contain; padding: var(--space-6); transition: transform 220ms var(--ease-standard); }
-    .image-container:active img { transform: scale(0.985); }
-    @media (hover: hover) and (pointer: fine) { .image-container:hover img { transform: scale(1.025); } }
-    .model-body { padding: var(--space-6); }
-    .model-body > * + * { margin-top: var(--space-4); }
-    .summary-line strong { color: var(--meta); }
-    .list-columns { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
-    .note-list { padding: var(--space-4); border: 1px solid var(--border-soft); border-radius: var(--radius-md); background: color-mix(in oklab, var(--surface), transparent 3%); }
-    .note-list ul { margin: var(--space-3) 0 0; padding-left: var(--space-5); }
-    .note-list li { margin-top: var(--space-2); color: var(--muted); }
-    .pros { color: var(--success); font-weight: 800; }
-    .cons { color: var(--danger); font-weight: 800; }
-    .price-tag { display: inline-flex; padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill); background: var(--surface-warm); color: var(--meta); font-weight: 900; }
-    .buy-links { display: flex; flex-wrap: wrap; gap: var(--space-3); }
-    #lightbox { display: none; position: fixed; inset: 0; z-index: 1000; align-items: center; justify-content: center; padding: 30px; background: rgba(32, 25, 20, .86); }
-    #lightbox img { max-width: min(100%, 1000px); max-height: 90vh; border-radius: var(--radius-lg); background: var(--surface); box-shadow: var(--elev-raised); transform-origin: center; }
-    @media (max-width: 900px) { .model-card { grid-template-columns: 1fr; } .image-container { border-right: 0; border-bottom: 1px solid var(--border-soft); } .list-columns { grid-template-columns: 1fr; } }
+    /* ===== LAYOUT ===== */
+    .page { min-height: 100vh; }
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 var(--space-6);
+    }
+
+    /* ===== NAV ===== */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      gap: var(--space-4);
+    }
+    .nav-brand {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-weight: 800;
+      color: var(--fg);
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      gap: var(--space-1);
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a {
+      padding: var(--space-2) var(--space-3);
+      border-radius: var(--radius-sm);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      white-space: nowrap;
+      transition: background var(--motion-fast) var(--ease), color var(--motion-fast) var(--ease);
+    }
+    .nav-links a:hover { background: var(--surface-warm); color: var(--meta); }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: var(--space-12) 0 var(--space-10);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: var(--space-10);
+      align-items: center;
+    }
+    .eyebrow {
+      display: block;
+      color: var(--meta);
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-3);
+    }
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      line-height: var(--leading-tight);
+      letter-spacing: var(--tracking-display);
+      margin-bottom: var(--space-4);
+    }
+    .lead {
+      color: var(--fg-2);
+      font-size: var(--text-lg);
+      max-width: 540px;
+    }
+
+    /* ===== HERO STATS ===== */
+    .stats-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--elev-raised);
+    }
+    .stats-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-5);
+      border-bottom: 1px solid var(--border-soft);
+    }
+    .stats-head h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+    }
+    .status-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--success);
+    }
+    .status-dot::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .stat {
+      padding: var(--space-5);
+      text-align: center;
+    }
+    .stat:not(:last-child) { border-right: 1px solid var(--border-soft); }
+    .stat-val {
+      display: block;
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: var(--text-sm);
+      margin-top: var(--space-1);
+    }
+
+    /* ===== SECTION ===== */
+    .section { padding: var(--space-12) 0; }
+    section[id], div[id] { scroll-margin-top: 72px; }
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-6);
+      margin-bottom: var(--space-8);
+    }
+    .section-header p {
+      color: var(--muted);
+      font-size: var(--text-sm);
+      max-width: 420px;
+    }
+
+    /* ===== COMPARISON TABLE ===== */
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--elev-raised);
+    }
+    .table-wrap table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 820px;
+    }
+    .table-wrap th,
+    .table-wrap td {
+      padding: var(--space-3) var(--space-4);
+      text-align: left;
+      font-size: var(--text-sm);
+      border-bottom: 1px solid var(--border-soft);
+      white-space: nowrap;
+    }
+    .table-wrap thead th {
+      background: var(--surface-warm);
+      color: var(--fg);
+      font-family: var(--font-mono);
+      font-size: var(--text-xs);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      position: sticky;
+      top: 56px;
+      z-index: 2;
+    }
+    .table-wrap thead th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 3;
+      background: var(--surface-warm);
+    }
+    .table-wrap tbody td:first-child {
+      font-weight: 700;
+      color: var(--fg);
+      position: sticky;
+      left: 0;
+      background: var(--surface);
+      z-index: 1;
+    }
+    .table-wrap tbody td {
+      color: var(--fg-2);
+    }
+    .table-wrap tbody tr:last-child td { border-bottom: 0; }
+    .price-cell {
+      font-weight: 900;
+      color: var(--meta) !important;
+    }
+
+    /* ===== MACBOOK CALLOUT ===== */
+    .macbook-callout {
+      margin-top: var(--space-8);
+      padding: var(--space-6);
+      background: linear-gradient(135deg, #f5f0ea 0%, #ede5d8 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--space-6);
+      align-items: start;
+    }
+    .macbook-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .macbook-callout h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+    }
+    .macbook-callout p {
+      color: var(--fg-2);
+      font-size: var(--text-sm);
+      line-height: var(--leading-body);
+    }
+    .macbook-callout .price-tag {
+      margin-top: var(--space-3);
+      display: inline-flex;
+      padding: var(--space-2) var(--space-4);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      font-weight: 800;
+      color: var(--meta);
+      font-size: var(--text-sm);
+    }
+
+    /* ===== MODEL CARDS ===== */
+    .model-grid {
+      display: grid;
+      gap: var(--space-6);
+    }
+    .model-card {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--elev-raised);
+      transition: transform var(--motion-base) var(--ease), box-shadow var(--motion-base) var(--ease);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .model-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(32, 25, 20, 0.12);
+      }
+    }
+    .model-img {
+      min-height: 260px;
+      background: var(--surface-warm);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .model-img img {
+      width: 100%;
+      height: 100%;
+      max-height: 280px;
+      object-fit: contain;
+      padding: var(--space-6);
+      transition: transform 220ms var(--ease);
+    }
+    .model-img:active img { transform: scale(0.97); }
+    @media (hover: hover) and (pointer: fine) {
+      .model-img:hover img { transform: scale(1.03); }
+    }
+    .model-body {
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .model-body h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+    }
+    .model-strength {
+      color: var(--fg-2);
+      font-size: var(--text-sm);
+      line-height: var(--leading-body);
+    }
+    .model-strength strong { color: var(--meta); }
+    .proscons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    .proscons-box {
+      padding: var(--space-4);
+      background: color-mix(in oklab, var(--surface), transparent 3%);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+    }
+    .proscons-box ul {
+      margin: var(--space-2) 0 0;
+      padding-left: var(--space-5);
+    }
+    .proscons-box li {
+      font-size: var(--text-sm);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .proscons-box li:not(:last-child) { margin-bottom: var(--space-1); }
+    .pro-label { color: var(--success); font-weight: 700; font-size: var(--text-sm); }
+    .con-label { color: var(--danger); font-weight: 700; font-size: var(--text-sm); }
+    .model-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+    .model-price {
+      display: inline-flex;
+      padding: var(--space-2) var(--space-4);
+      background: var(--surface-warm);
+      border-radius: var(--radius-pill);
+      font-weight: 900;
+      color: var(--meta);
+      font-size: var(--text-sm);
+    }
+    .buy-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: var(--space-2) var(--space-4);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      text-decoration: none;
+      transition: all var(--motion-fast) var(--ease);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--accent-on);
+      border-color: var(--accent);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--fg-2);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .btn-primary:hover { background: var(--accent-hover); }
+      .btn-ghost:hover { background: var(--surface-warm); color: var(--meta); }
+    }
+
+    /* ===== DECISION GUIDE ===== */
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--space-4);
+    }
+    .guide-card {
+      padding: var(--space-5);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: transform var(--motion-base) var(--ease);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .guide-card:hover { transform: translateY(-1px); }
+    }
+    .guide-card h4 {
+      font-family: var(--font-display);
+      font-size: var(--text-base);
+      margin-bottom: var(--space-2);
+    }
+    .guide-card p {
+      color: var(--fg-2);
+      font-size: var(--text-sm);
+    }
+
+    /* ===== WARNING BOX ===== */
+    .warning-box {
+      padding: var(--space-5);
+      background: #fef7ee;
+      border: 1px solid #f5d6b0;
+      border-radius: var(--radius-lg);
+      margin-top: var(--space-8);
+    }
+    .warning-box h4 {
+      color: var(--warn);
+      font-size: var(--text-sm);
+      font-weight: 700;
+      margin-bottom: var(--space-3);
+    }
+    .warning-box ul {
+      padding-left: var(--space-5);
+    }
+    .warning-box li {
+      font-size: var(--text-sm);
+      color: var(--fg-2);
+      margin-bottom: var(--space-2);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      padding: var(--space-10) 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: var(--text-sm);
+      border-top: 1px solid var(--border-soft);
+    }
+
+    /* ===== LIGHTBOX ===== */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-8);
+      background: rgba(32, 25, 20, 0.88);
+    }
+    #lightbox.active { display: flex; }
+    #lightbox img {
+      max-width: min(100%, 900px);
+      max-height: 85vh;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      box-shadow: var(--elev-raised);
+    }
+
+    /* ===== SCROLL HINT (table) ===== */
+    .scroll-hint {
+      display: none;
+      text-align: center;
+      font-size: var(--text-xs);
+      color: var(--muted);
+      padding: var(--space-2) 0;
+      margin-top: var(--space-2);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 860px) {
+      .container { padding: 0 var(--space-4); }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+      }
+      .hero { padding: var(--space-8) 0 var(--space-6); }
+      .stats-grid { grid-template-columns: repeat(3, 1fr); }
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+      }
+      .section-header p { max-width: none; }
+      .model-card { grid-template-columns: 1fr; }
+      .model-img { min-height: 200px; border-right: 0; border-bottom: 1px solid var(--border-soft); }
+      .model-img img { max-height: 220px; }
+      .proscons { grid-template-columns: 1fr; }
+      .macbook-callout { grid-template-columns: 1fr; }
+      .guide-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .container { padding: 0 var(--space-3); }
+      h1 { font-size: clamp(1.5rem, 7vw, 2.2rem); }
+      .stats-card { border-radius: var(--radius-lg); }
+      .nav-links a { padding: var(--space-2); font-size: var(--text-xs); }
+      .scroll-hint { display: block; }
+      .model-body { padding: var(--space-4); }
+      .model-footer { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 1ms !important;
+        animation-duration: 1ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
   </style>
 </head>
 <body>
+  <div id="lightbox" onclick="this.classList.remove('active')">
+    <img id="lightbox-img" src="" alt="Full size view">
+  </div>
+
   <main class="page">
-    <div class="container"><a href="index.html" class="nav-home">← Back to summary</a></div>
-    <section class="container hero">
-      <div class="stack">
-        <p class="eyebrow">Deep research · laptop shortlist</p>
-        <h1>Laptop comparison for kids under 20,000 THB</h1>
-        <p class="lead">A focused shortlist of 5 qualified laptops for online classes, documents, and everyday use under 20,000 THB — with store links and product images.</p>
+    <!-- NAV -->
+    <nav class="nav-bar">
+      <div class="container nav-inner">
+        <span class="nav-brand">Laptop Research</span>
+        <div class="nav-links">
+          <a href="#comparison">Comparison</a>
+          <a href="#macbook">MacBook Neo</a>
+          <a href="#details">Details</a>
+          <a href="#guide">Guide</a>
+        </div>
       </div>
-      <article class="panel" aria-label="Research summary metrics">
-        <div class="panel-head"><div><p class="eyebrow">Shortlist</p><h3>5 qualified picks</h3></div><span class="status">updated</span></div>
-        <div class="metrics"><div class="metric"><strong>20k</strong><span>Budget ceiling</span></div><div class="metric"><strong>15.6"</strong><span>Main screen size</span></div><div class="metric"><strong>3 yr</strong><span>Target lifespan</span></div></div>
-      </article>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Deep research · laptop shortlist · August 2026</span>
+          <h1>Laptop comparison for kids under 20,000 THB</h1>
+          <p class="lead">A focused shortlist of 5 qualified Windows laptops + MacBook Neo for online classes, documents, and everyday use — with real store prices and product images.</p>
+        </div>
+        <div class="stats-card">
+          <div class="stats-head">
+            <h3>6 picks</h3>
+            <span class="status-dot">Updated Aug 2026</span>
+          </div>
+          <div class="stats-grid">
+            <div class="stat"><span class="stat-val">20K</span><span class="stat-label">Budget ceiling</span></div>
+            <div class="stat"><span class="stat-val">1.22</span><span class="stat-label">Lightest kg</span></div>
+            <div class="stat"><span class="stat-val">3 yr</span><span class="stat-label">Target lifespan</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="container section">
-      <div class="section-head"><div><p class="eyebrow">Comparison</p><h2>Spec comparison table</h2></div><p>Only the details that affect real use: CPU, RAM, storage, display, weight, and price.</p></div>
-      <div class="comparison-table-container">
-        <table>
-          <thead><tr><th>Feature</th><th>Acer Aspire Lite 15</th><th>MSI Modern 15</th><th>Lenovo IdeaPad Slim 3i</th><th>HP 15-fr0024TU</th><th>ASUS ExpertBook B1</th></tr></thead>
-          <tbody>
-            <tr><td>CPU</td><td>AMD Ryzen 7 7730U</td><td>Intel Core i5-1334U</td><td>Intel Core i5-13420H</td><td>Intel Core i5-13500H</td><td>Intel Core 5 120U</td></tr>
-            <tr><td>RAM</td><td>16GB DDR4 (up to 32GB)</td><td>16GB DDR4 (up to 64GB)</td><td>16GB DDR5 (up to 24GB)</td><td>16GB DDR4</td><td>16GB DDR5 (up to 64GB)</td></tr>
-            <tr><td>Storage</td><td>512GB NVMe SSD</td><td>512GB NVMe Gen4</td><td>512GB NVMe Gen4 + slot</td><td>512GB NVMe SSD</td><td>512GB NVMe Gen4</td></tr>
-            <tr><td>Display</td><td>15.6" FHD IPS</td><td>15.6" FHD IPS</td><td>14" WUXGA IPS 16:10</td><td>15.6" FHD IPS</td><td>15.6" FHD IPS</td></tr>
-            <tr><td>OS</td><td>Win11 + Office 2024</td><td>Win11 + Office 2024</td><td>Win11 + Office 2024</td><td>Win11 + Office 2024</td><td>DOS (no OS)</td></tr>
-            <tr><td>Weight</td><td>1.7 kg</td><td>~1.7 kg</td><td>1.39 kg</td><td>~1.7 kg</td><td>~1.7 kg</td></tr>
-            <tr><td>Price</td><td>16,990</td><td>14,990</td><td>16,990</td><td>16,490</td><td>17,990</td></tr>
-          </tbody>
-        </table>
+    <!-- COMPARISON TABLE -->
+    <section class="section" id="comparison">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Comparison</span>
+            <h2>Spec comparison table</h2>
+          </div>
+          <p>Only the details that affect real use: CPU, RAM, storage, display, weight, and price.</p>
+        </div>
+        <div class="scroll-hint">← Scroll horizontally to see all models →</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Acer Aspire Lite 15</th>
+                <th>MSI Modern 15</th>
+                <th>Lenovo Slim 3i</th>
+                <th>HP 15-fr0024TU</th>
+                <th>ASUS ExpertBook B1</th>
+                <th>MacBook Neo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>CPU</td><td>AMD Ryzen 7 7730U</td><td>Intel i5-1334U</td><td>Intel i5-13420H</td><td>Intel i5-13500H</td><td>Intel Core 5 120U</td><td>Apple A18 Pro</td></tr>
+              <tr><td>Cores</td><td>8-core / 16-thread</td><td>10-core / 12-thread</td><td>8-core / 12-thread</td><td>12-core / 16-thread</td><td>10-core / 12-thread</td><td>6-core / 6-thread</td></tr>
+              <tr><td>RAM</td><td>16GB DDR4</td><td>16GB DDR4 (up to 64GB)</td><td>16GB DDR5 (up to 24GB)</td><td>16GB DDR4</td><td>16GB DDR5 (up to 64GB)</td><td>8GB LPDDR5X</td></tr>
+              <tr><td>Storage</td><td>512GB NVMe</td><td>512GB NVMe Gen4</td><td>512GB NVMe Gen4</td><td>512GB NVMe</td><td>512GB NVMe Gen4</td><td>256GB SSD</td></tr>
+              <tr><td>Display</td><td>15.6" FHD IPS</td><td>15.6" FHD IPS</td><td>14" WUXGA IPS 16:10</td><td>15.6" FHD IPS</td><td>15.6" FHD IPS</td><td>13" Liquid Retina</td></tr>
+              <tr><td>OS</td><td>Win11 + Office</td><td>Win11 + Office</td><td>Win11 + Office</td><td>Win11 + Office</td><td>DOS</td><td>macOS</td></tr>
+              <tr><td>Weight</td><td>1.7 kg</td><td>~1.7 kg</td><td>1.39 kg</td><td>~1.7 kg</td><td>~1.7 kg</td><td>1.22 kg</td></tr>
+              <tr><td>Battery</td><td>~6 hrs</td><td>~6 hrs</td><td>~7 hrs</td><td>~4-5 hrs</td><td>~6 hrs</td><td>~15.5 hrs</td></tr>
+              <tr><td class="price-cell">Price (THB)</td><td class="price-cell">16,380 – 17,990</td><td class="price-cell">14,990 – 15,490</td><td class="price-cell">16,130 – 17,990</td><td class="price-cell">17,990 – 22,990</td><td class="price-cell">16,700 – 20,990</td><td class="price-cell">19,900 – 22,900</td></tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </section>
 
-    <section class="container section">
-      <div class="section-head"><div><p class="eyebrow">Details</p><h2>Detailed model notes</h2></div><p>Click an image to view it larger, then use the buttons below to open store pages.</p></div>
-      <div class="model-grid">
-        <article class="model-card">
-          <div class="image-container" onclick="showLightbox('assets/images/acer_aspire_lite15_nbs.jpg')"><img src="assets/images/acer_aspire_lite15_nbs.jpg" alt="Acer Aspire Lite 15 AL15-42P-R4PQ"></div>
-          <div class="model-body"><p class="eyebrow">Best choice</p><h3>Acer Aspire Lite 15 AL15-42P-R4PQ</h3><p class="summary-line"><strong>Key strength:</strong> Ryzen 7 8-core — best in class under 20K, 16GB RAM, IPS display, Office included</p><div class="list-columns"><div class="note-list"><p class="pros">✅ Pros</p><ul><li>CPU AMD Ryzen 7 7730U 8-core — most powerful in class</li><li>16GB SO-DIMM RAM — upgradable</li><li>15.6" FHD IPS display</li><li>Genuine Windows 11 + Office Home 2024</li><li>FHD Webcam Privacy Shutter</li></ul></div><div class="note-list"><p class="cons">❌ Cons</p><ul><li>No face/fingerprint scanner</li><li>45% NTSC display — not for graphic work</li></ul></div></div><p class="price-tag">15,990 - 16,990 THB</p><div class="buy-links"><a href="https://www.advice.co.th/branch-a013/index.php/product/productdetail/A0169276" class="btn btn-primary" target="_blank">Advice</a><a href="https://www.bnn.in.th/th/p/acer-notebook-aspire-lite-15-al15-42p-r4pq-silver-a-4711474503206_z96541" class="btn btn-secondary" target="_blank">BaNANA</a></div></div>
-        </article>
-        <article class="model-card">
-          <div class="image-container" onclick="showLightbox('assets/images/msi_modern15_f13mg_nbs.jpg')"><img src="assets/images/msi_modern15_f13mg_nbs.jpg" alt="MSI Modern 15 F13MG-603TH"></div>
-          <div class="model-body"><p class="eyebrow">Budget pick</p><h3>MSI Modern 15 F13MG-603TH</h3><p class="summary-line"><strong>Key strength:</strong> Cheapest in class yet delivers i5 + 16GB RAM + genuine Office, RAM upgradable to 64GB</p><div class="list-columns"><div class="note-list"><p class="pros">✅ Pros</p><ul><li>Just 14,990 THB</li><li>CPU Intel Core i5-1334U</li><li>16GB DDR4 RAM (upgradable to 64GB, 2 slots)</li><li>Windows 11 + Office Home 2024</li><li>Backlit Keyboard + Copilot Key</li><li>USB-C Full Function</li></ul></div><div class="note-list"><p class="cons">❌ Cons</p><ul><li>Single SSD slot — hard to upgrade</li><li>45.6Whr battery — moderate battery life</li></ul></div></div><p class="price-tag">14,990 THB</p><div class="buy-links"><a href="https://www.bnn.in.th/th/p/msi-notebook-modern-15-f13mg-603th-silver-9s7-15s122-603_z3q8e9" class="btn btn-primary" target="_blank">BaNANA</a><a href="https://www.advice.co.th/branch-u085/index.php/product/productdetail/A0168988" class="btn btn-secondary" target="_blank">Advice</a></div></div>
-        </article>
-        <article class="model-card">
-          <div class="image-container" onclick="showLightbox('assets/images/lenovo_ideapad_slim3i_nbs.jpg')"><img src="assets/images/lenovo_ideapad_slim3i_nbs.jpg" alt="Lenovo IdeaPad Slim 3i 14IRH10"></div>
-          <div class="model-body"><p class="eyebrow">Portable pick</p><h3>Lenovo IdeaPad Slim 3i 14IRH10</h3><p class="summary-line"><strong>Key strength:</strong> Lightest at 1.39kg, 16:10 ultra-wide display — great for portability, with face unlock</p><div class="list-columns"><div class="note-list"><p class="pros">✅ Pros</p><ul><li>Just 1.39kg — lightest in class</li><li>14" WUXGA IPS 16:10 — wide and easy to read</li><li>IR Camera with Windows Hello face unlock</li><li>2x SSD slots</li><li>50Wh battery</li></ul></div><div class="note-list"><p class="cons">❌ Cons</p><ul><li>8GB onboard + 8GB SO-DIMM (up to 24GB)</li><li>No backlit keyboard</li></ul></div></div><p class="price-tag">16,990 - 17,990 THB</p><div class="buy-links"><a href="https://www.bnn.in.th/th/p/lenovo-notebook-ideapad-slim-3i-14irh10-83k0004wta-grey-198156959058_dxy561" class="btn btn-primary" target="_blank">BaNANA</a><a href="https://www.jib.co.th/web/product/readProduct/76600/1820" class="btn btn-secondary" target="_blank">JIB</a></div></div>
-        </article>
-        <article class="model-card">
-          <div class="image-container" onclick="showLightbox('assets/images/hp_15_fr0024tu_nbs.jpg')"><img src="assets/images/hp_15_fr0024tu_nbs.jpg" alt="HP 15-fr0024TU"></div>
-          <div class="model-body"><p class="eyebrow">Performance pick</p><h3>HP 15-fr0024TU</h3><p class="summary-line"><strong>Key strength:</strong> Intel H-series CPU 45W — most powerful 12-core, with on-site service</p><div class="list-columns"><div class="note-list"><p class="pros">✅ Pros</p><ul><li>CPU i5-13500H (12-core, 45W) — most powerful in class</li><li>RAM 16GB DDR4 2 Slots</li><li>Windows 11 + Office Home 2024</li><li>Bluetooth 5.4</li><li>On-site service included</li></ul></div><div class="note-list"><p class="cons">❌ Cons</p><ul><li>41Whr battery — only 4-5 hrs (power-hungry CPU)</li><li>No card reader</li></ul></div></div><p class="price-tag">16,490 - 17,990 THB</p><div class="buy-links"><a href="https://www.advice.co.th/branch-a003/index.php/product/productdetail/A0169144" class="btn btn-primary" target="_blank">Advice</a><a href="https://www.bnn.in.th/th/p/hp-notebook-15-fr0024tu-silver-199251476600_rqegj2" class="btn btn-secondary" target="_blank">BaNANA</a></div></div>
-        </article>
-        <article class="model-card">
-          <div class="image-container" onclick="showLightbox('assets/images/asus_expertbook_b1_nbs.jpg')"><img src="assets/images/asus_expertbook_b1_nbs.jpg" alt="ASUS ExpertBook B1 B1503CVA-S76212"></div>
-          <div class="model-body"><p class="eyebrow">Durability pick</p><h3>ASUS ExpertBook B1 B1503CVA</h3><p class="summary-line"><strong>Key strength:</strong> MIL-STD 810H military-grade — drop resistant, spill-proof keyboard</p><div class="list-columns"><div class="note-list"><p class="pros">✅ Pros</p><ul><li>MIL-STD 810H rated (drop/shock/spill resistant)</li><li>2x USB-C Full Function ports</li><li>16GB DDR5 RAM — upgradable to 64GB</li><li>Spill-proof keyboard</li></ul></div><div class="note-list"><p class="cons">❌ Cons</p><ul><li>No Windows included (DOS)</li><li>No Office</li><li>Highest price at 17,990 + need to buy Windows separately</li></ul></div></div><p class="price-tag">17,990 THB</p><div class="buy-links"><a href="https://th.store.asus.com/asus-expertbook-b1-b1503cva-s76212.html" class="btn btn-primary" target="_blank">ASUS Online Store</a><a href="https://notebookspec.com/notebook/14274-asus-expertbook-b1-b1503cva-s76212.html" class="btn btn-secondary" target="_blank">Notebookspec</a></div></div>
-        </article>
+    <!-- MACBOOK NEO -->
+    <section class="section" id="macbook">
+      <div class="container">
+        <div class="macbook-callout">
+          <div class="macbook-icon"></div>
+          <div>
+            <h3>MacBook Neo — The Wild Card</h3>
+            <p>ผู้ซื้อยอมรับราคาที่บวกได้ — MacBook Neo คือตัวเลือกที่ควรพิจารณา. น้ำหนักเบาที่สุด (1.22 kg), Liquid Retina display คุณภาพสูง, battery 15.5 ชม. แต่ trade-off คือ RAM 8GB ไม่อัพได้, storage เริ่มต้นแค่ 256GB, ไม่มี USB-A, ไม่มี Office แถม — ต้องซื้อแยก ~฿3,000/ปี. 3-year TCO: ~฿28,900 สำหรับ MacBook Neo  vs ~฿16,990 สำหรับ Acer.</p>
+            <span class="price-tag">฿19,900 (256GB) / ฿22,900 (512GB + Touch ID)</span>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="container footer">*Last updated: July 2026 | Promotions may change depending on each store.</footer>
+
+    <!-- MODEL DETAILS -->
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Details</span>
+            <h2>Detailed model notes</h2>
+          </div>
+          <p>Click an image to view it larger.</p>
+        </div>
+        <div class="model-grid">
+
+          <!-- 1. Acer -->
+          <article class="model-card">
+            <div class="model-img" onclick="showLightbox('assets/images/acer_aspire_lite15_nbs.jpg')">
+              <img src="assets/images/acer_aspire_lite15_nbs.jpg" alt="Acer Aspire Lite 15 AL15-42P-R4PQ" loading="lazy">
+            </div>
+            <div class="model-body">
+              <span class="eyebrow">Best value</span>
+              <h3>Acer Aspire Lite 15 AL15-42P-R4PQ</h3>
+              <p class="model-strength"><strong>Key strength:</strong> Ryzen 7 8-core — most powerful CPU under 20K, 16GB RAM, IPS display, free Office 2024</p>
+              <div class="proscons">
+                <div class="proscons-box">
+                  <p class="pro-label">Pros</p>
+                  <ul>
+                    <li>AMD Ryzen 7 7730U 8-core — most powerful in class</li>
+                    <li>16GB SO-DIMM RAM — upgradable</li>
+                    <li>15.6" FHD IPS display</li>
+                    <li>Windows 11 + Office Home 2024</li>
+                    <li>FHD Webcam Privacy Shutter</li>
+                  </ul>
+                </div>
+                <div class="proscons-box">
+                  <p class="con-label">Cons</p>
+                  <ul>
+                    <li>No face/fingerprint scanner</li>
+                    <li>45% NTSC — not for graphic work</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-footer">
+                <span class="model-price">฿16,380 – 17,990</span>
+                <div class="buy-links">
+                  <a href="https://www.advice.co.th/branch-a013/index.php/product/productdetail/A0169276" class="btn btn-primary" target="_blank" rel="noopener">Advice</a>
+                  <a href="https://www.bnn.in.th/th/p/acer-notebook-aspire-lite-15-al15-42p-r4pq-silver-a-4711474503206_z96541" class="btn btn-ghost" target="_blank" rel="noopener">BaNANA</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. MSI -->
+          <article class="model-card">
+            <div class="model-img" onclick="showLightbox('assets/images/msi_modern15_f13mg_nbs.jpg')">
+              <img src="assets/images/msi_modern15_f13mg_nbs.jpg" alt="MSI Modern 15 F13MG-603TH" loading="lazy">
+            </div>
+            <div class="model-body">
+              <span class="eyebrow">Budget pick</span>
+              <h3>MSI Modern 15 F13MG-603TH</h3>
+              <p class="model-strength"><strong>Key strength:</strong> Cheapest in class yet delivers i5 + 16GB RAM + genuine Office, RAM upgradable to 64GB</p>
+              <div class="proscons">
+                <div class="proscons-box">
+                  <p class="pro-label">Pros</p>
+                  <ul>
+                    <li>Just ฿14,990 – 15,490</li>
+                    <li>CPU Intel Core i5-1334U</li>
+                    <li>16GB DDR4 (up to 64GB, 2 slots)</li>
+                    <li>Windows 11 + Office Home 2024</li>
+                    <li>Backlit Keyboard + Copilot Key</li>
+                  </ul>
+                </div>
+                <div class="proscons-box">
+                  <p class="con-label">Cons</p>
+                  <ul>
+                    <li>Single SSD slot — hard to upgrade</li>
+                    <li>Stock inconsistent — verify first</li>
+                    <li>45.6Whr battery — moderate</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-footer">
+                <span class="model-price">฿14,990 – 15,490</span>
+                <div class="buy-links">
+                  <a href="https://www.invadeit.co.th/product/notebooks-laptops/msi/modern-15-f13mg-603th-urban-silver-p079510" class="btn btn-primary" target="_blank" rel="noopener">invadeit</a>
+                  <a href="https://www.bnn.in.th/th/p/msi-notebook-modern-15-f13mg-603th-silver-9s7-15s122-603_z3q8e9" class="btn btn-ghost" target="_blank" rel="noopener">BaNANA</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Lenovo -->
+          <article class="model-card">
+            <div class="model-img" onclick="showLightbox('assets/images/lenovo_ideapad_slim3i_nbs.jpg')">
+              <img src="assets/images/lenovo_ideapad_slim3i_nbs.jpg" alt="Lenovo IdeaPad Slim 3i 14IRH10" loading="lazy">
+            </div>
+            <div class="model-body">
+              <span class="eyebrow">Portable pick</span>
+              <h3>Lenovo IdeaPad Slim 3i 14IRH10</h3>
+              <p class="model-strength"><strong>Key strength:</strong> Lightest Windows at 1.39kg, 16:10 ultra-wide display — great for portability, with face unlock</p>
+              <div class="proscons">
+                <div class="proscons-box">
+                  <p class="pro-label">Pros</p>
+                  <ul>
+                    <li>Just 1.39kg — lightest Windows</li>
+                    <li>14" WUXGA IPS 16:10</li>
+                    <li>IR Camera — Windows Hello face unlock</li>
+                    <li>2x SSD slots</li>
+                    <li>50Wh battery</li>
+                  </ul>
+                </div>
+                <div class="proscons-box">
+                  <p class="con-label">Cons</p>
+                  <ul>
+                    <li>8GB onboard + 8GB SO-DIMM (max 24GB)</li>
+                    <li>No backlit keyboard</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-footer">
+                <span class="model-price">฿16,130 – 17,990</span>
+                <div class="buy-links">
+                  <a href="https://www.bnn.in.th/en/p/notebook/thin-light-notebook/lenovo-thin-light-notebook/lenovo-notebook-ideapad-slim-3i-14irh10-83k0004wta-grey-198156959058_dxy561" class="btn btn-primary" target="_blank" rel="noopener">BaNANA</a>
+                  <a href="https://www.jib.co.th/web/product/readProduct/76600/1820" class="btn btn-ghost" target="_blank" rel="noopener">JIB</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. HP -->
+          <article class="model-card">
+            <div class="model-img" onclick="showLightbox('assets/images/hp_15_fr0024tu_nbs.jpg')">
+              <img src="assets/images/hp_15_fr0024tu_nbs.jpg" alt="HP 15-fr0024TU" loading="lazy">
+            </div>
+            <div class="model-body">
+              <span class="eyebrow">Performance pick</span>
+              <h3>HP 15-fr0024TU</h3>
+              <p class="model-strength"><strong>Key strength:</strong> Intel H-series CPU 45W — most powerful 12-core, with HP on-site service</p>
+              <div class="proscons">
+                <div class="proscons-box">
+                  <p class="pro-label">Pros</p>
+                  <ul>
+                    <li>i5-13500H 12-core (45W) — most powerful</li>
+                    <li>16GB DDR4 2 Slots</li>
+                    <li>Windows 11 + Office Home 2024</li>
+                    <li>Bluetooth 5.4</li>
+                    <li>On-site service included</li>
+                  </ul>
+                </div>
+                <div class="proscons-box">
+                  <p class="con-label">Cons</p>
+                  <ul>
+                    <li>41Whr battery — only 4-5 hrs</li>
+                    <li>No card reader</li>
+                    <li>Price gap huge (฿17,990–22,990)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-footer">
+                <span class="model-price">฿17,990 – 22,990</span>
+                <div class="buy-links">
+                  <a href="https://www.bnn.in.th/en/p/hp-notebook-15-fr0024tu-silver-199251476600_rqegj2" class="btn btn-primary" target="_blank" rel="noopener">BaNANA</a>
+                  <a href="https://www.jib.co.th/web/product/readProduct/77975" class="btn btn-ghost" target="_blank" rel="noopener">JIB</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. ASUS ExpertBook -->
+          <article class="model-card">
+            <div class="model-img" onclick="showLightbox('assets/images/asus_expertbook_b1_nbs.jpg')">
+              <img src="assets/images/asus_expertbook_b1_nbs.jpg" alt="ASUS ExpertBook B1 B1503CVA-S76212" loading="lazy">
+            </div>
+            <div class="model-body">
+              <span class="eyebrow">Durability pick</span>
+              <h3>ASUS ExpertBook B1 B1503CVA</h3>
+              <p class="model-strength"><strong>Key strength:</strong> MIL-STD 810H military-grade — drop resistant, spill-proof keyboard</p>
+              <div class="proscons">
+                <div class="proscons-box">
+                  <p class="pro-label">Pros</p>
+                  <ul>
+                    <li>MIL-STD 810H rated (drop/shock/spill)</li>
+                    <li>2x USB-C Full Function ports</li>
+                    <li>16GB DDR5 RAM (up to 64GB)</li>
+                    <li>Spill-proof keyboard</li>
+                  </ul>
+                </div>
+                <div class="proscons-box">
+                  <p class="con-label">Cons</p>
+                  <ul>
+                    <li>No Windows included (DOS)</li>
+                    <li>No Office</li>
+                    <li>1-year warranty only</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-footer">
+                <span class="model-price">฿16,700 – 20,990</span>
+                <div class="buy-links">
+                  <a href="https://www.gcs.co.th" class="btn btn-primary" target="_blank" rel="noopener">GCS</a>
+                  <a href="https://www.advice.co.th/branch-a035/index.php/product/productdetail/A0172704" class="btn btn-ghost" target="_blank" rel="noopener">Advice</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. MacBook Neo -->
+          <article class="model-card" style="border-color: var(--meta);">
+            <div class="model-img" onclick="showLightbox('assets/images/macbook_neo_nbs.svg')" style="background: linear-gradient(135deg, #f5f0ea, #ede5d8);">
+              <img src="assets/images/macbook_neo_nbs.svg" alt="Apple MacBook Neo 13-inch Liquid Retina" loading="lazy">
+            </div>
+            <div class="model-body">
+              <span class="eyebrow">Premium pick</span>
+              <h3>MacBook Neo</h3>
+              <p class="model-strength"><strong>Key strength:</strong> Best display (Liquid Retina), best battery (15.5 hrs), lightest (1.22 kg) — premium build with macOS ecosystem</p>
+              <div class="proscons">
+                <div class="proscons-box">
+                  <p class="pro-label">Pros</p>
+                  <ul>
+                    <li>1.22 kg — lightest of all</li>
+                    <li>Liquid Retina 500 nits — best display</li>
+                    <li>15.5 hrs battery life</li>
+                    <li>macOS — 5+ year support</li>
+                    <li>Full aluminum build</li>
+                  </ul>
+                </div>
+                <div class="proscons-box">
+                  <p class="con-label">Cons</p>
+                  <ul>
+                    <li>RAM 8GB — not upgradable</li>
+                    <li>256GB storage (base)</li>
+                    <li>No Office included (~฿3K/yr)</li>
+                    <li>No USB-A ports</li>
+                    <li>A18 Pro = phone chip, not M-series</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-footer">
+                <span class="model-price">฿19,900 (256GB) / ฿22,900 (512GB)</span>
+                <div class="buy-links">
+                  <a href="https://www.apple.com/th/shop/buy-mac/macbook-neo" class="btn btn-primary" target="_blank" rel="noopener">Apple Store</a>
+                  <a href="https://www.bnn.in.th/th/p/notebook/macbook" class="btn btn-ghost" target="_blank" rel="noopener">BaNANA</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DECISION GUIDE -->
+    <section class="section" id="guide" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Decision guide</span>
+            <h2>Which one for your child?</h2>
+          </div>
+        </div>
+        <div class="guide-grid">
+          <div class="guide-card">
+            <h4>General use + school</h4>
+            <p><strong>Lenovo IdeaPad Slim 3i (14")</strong> — lightest Windows at 1.39kg, 16:10 display, face unlock. Easy to carry.</p>
+          </div>
+          <div class="guide-card">
+            <h4>Performance + big screen</h4>
+            <p><strong>Acer Aspire Lite 15 (Ryzen 7)</strong> — 8-core CPU, 16GB RAM, genuine Office, 15.6" IPS. Best value overall.</p>
+          </div>
+          <div class="guide-card">
+            <h4>Clumsy kid + rough use</h4>
+            <p><strong>ASUS ExpertBook B1</strong> — MIL-STD shock resistant, spill-proof keyboard. Built to last.</p>
+          </div>
+          <div class="guide-card">
+            <h4>Tightest budget</h4>
+            <p><strong>MSI Modern 15</strong> — cheapest at ฿14,990, genuine Office, RAM upgradable to 64GB. Check stock first.</p>
+          </div>
+          <div class="guide-card">
+            <h4>Battery life + portability</h4>
+            <p><strong>MacBook Neo</strong> — 15.5 hrs battery, 1.22 kg, Liquid Retina display. Premium build, long lifespan.</p>
+          </div>
+          <div class="guide-card">
+            <h4>Apple ecosystem</h4>
+            <p><strong>MacBook Neo</strong> — if the family already uses iPhone/iPad, seamless integration + 5+ year support + great resale value.</p>
+          </div>
+        </div>
+
+        <!-- Warnings -->
+        <div class="warning-box">
+          <h4>August 2026 market notes</h4>
+          <ul>
+            <li>Prices trending UP — memory shortage + AI hardware integration</li>
+            <li>MSI Modern 15 stock inconsistent — verify before purchasing</li>
+            <li>HP 15-fr0024TU price gap huge (฿17,990 vs ฿22,990) — always compare retailers</li>
+            <li>ASUS ExpertBook B1 still at DOS price ฿16,700 but limited stock</li>
+            <li>MacBook Neo TCO ~฿28,900 over 3 years (Office separate) vs Windows ~฿16,990</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        Last updated: 25 August 2026 — Prices verified from Advice, JIB, BaNANA, Acer Store, Shopee, Lazada. Please verify in-store before purchasing.
+      </div>
+    </footer>
   </main>
-  <div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img" src="assets/images/asus_expertbook_b1_nbs.jpg" alt="Full size view"></div>
+
   <script>
     function showLightbox(url) {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      lightboxImg.src = url;
-      lightbox.style.display = 'flex';
+      const lb = document.getElementById('lightbox');
+      document.getElementById('lightbox-img').src = url;
+      lb.classList.add('active');
     }
   </script>
 </body>
