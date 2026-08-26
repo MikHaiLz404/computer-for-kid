@@ -225,7 +225,7 @@
 
     /* ===== SECTION ===== */
     .section { padding: var(--space-12) 0; }
-    section[id], div[id] { scroll-margin-top: 72px; }
+    section[id], div[id], article[id] { scroll-margin-top: 72px; }
     .section-header {
       display: flex;
       align-items: flex-end;
@@ -678,20 +678,6 @@
       </div>
     </section>
 
-    <!-- MACBOOK NEO -->
-    <section class="section" id="macbook">
-      <div class="container">
-        <div class="macbook-callout">
-          <div class="macbook-icon"></div>
-          <div>
-            <h3>MacBook Neo — The Wild Card</h3>
-            <p>ผู้ซื้อยอมรับราคาที่บวกได้ — MacBook Neo คือตัวเลือกที่ควรพิจารณา. น้ำหนักเบาที่สุด (1.22 kg), Liquid Retina display คุณภาพสูง, battery 15.5 ชม. แต่ trade-off คือ RAM 8GB ไม่อัพได้, storage เริ่มต้นแค่ 256GB, ไม่มี USB-A, ไม่มี Office แถม — ต้องซื้อแยก ~฿3,000/ปี. 3-year TCO: ~฿28,900 สำหรับ MacBook Neo  vs ~฿16,990 สำหรับ Acer.</p>
-            <span class="price-tag">฿19,900 (256GB) / ฿22,900 (512GB + Touch ID)</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- MODEL DETAILS -->
     <section class="section" id="details">
       <div class="container">
@@ -897,7 +883,7 @@
           </article>
 
           <!-- 6. MacBook Neo -->
-          <article class="model-card" style="border-color: var(--meta);">
+          <article class="model-card" id="macbook" style="border-color: var(--meta);">
             <div class="model-img" onclick="showLightbox('assets/images/macbook_neo_nbs.jpg')" style="background: linear-gradient(135deg, #f5f0ea, #ede5d8);">
               <img src="assets/images/macbook_neo_nbs.jpg" alt="Apple MacBook Neo 13-inch Liquid Retina (Indigo)">
             </div>
